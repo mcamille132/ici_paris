@@ -1,0 +1,453 @@
+// customize some Bootstrap variables
+$primary: darken(#428bca, 20%);
+
+// the ~ allows you to reference things in node_modules
+@import "~bootstrap/scss/bootstrap";
+
+
+:root{
+    --framboise : #FE1541;
+    --marine : #1A2434;
+}
+
+*{
+    margin : 0px;
+    padding : 0px;
+}
+
+h1{
+    font-family: 'Oswald', sans-serif;
+    font-weight: 100;
+}
+
+h2 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 100;
+}
+
+h3{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 100;
+}
+
+p {
+    font-family: 'Roboto', sans-serif;
+}
+
+/* HOME PAGE */
+
+.logo-home {
+    font-family: 'Oswald', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 90px;
+    letter-spacing: 0.23em;
+}
+
+.logo-mention{
+    font-family: 'Oswald', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 40px;
+    letter-spacing: 0.23em;
+}
+
+.bg-section {
+    background-color: var(--marine);
+    color: white;
+}
+
+.ellipse {
+    background:var(--framboise);
+    border-radius:100%;
+    width:150px;
+    height:150px;
+    position: absolute;
+}
+
+.baseline-home {
+    font-size: 55px;
+}
+
+.small-ellipse {
+    background:var(--framboise);
+    border-radius:100%;
+    width:150px;
+    height:150px;
+}
+.style-home-name {
+    font-size: 16px;
+}
+
+.border-style-home {
+    color: var(--framboise);
+    background-color: white;
+    margin-top: -40px;
+}
+.btn-framboise {
+    background-color: var(--framboise);
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 15px 15px;
+    border: 1px solid var(--framboise);
+}
+.btn-framboise:hover {
+    border: 2px solid var(--framboise);
+    text-decoration: none;
+    color: white;
+    background-color: transparent;
+}
+#spin {
+    color: white;
+  }
+#spin:after {
+    content:"";
+    animation: spin 4s linear infinite;
+}
+@keyframes spin {
+    0% { content:"Cliché"; }
+    10% { content:"Certifié"; }
+    20% { content:"Abusé"; }
+    30% { content:"Parisien"; }
+}
+
+.hashtag-home{
+    font-size: 50px;
+    line-height: 80px;
+    letter-spacing: 9px;
+    
+}
+.color-framboise {
+    color:var(--framboise);
+    letter-spacing: 10px;
+}
+@media (min-width: 700) and (max-width: 1900) { 
+    .hashtag-home{
+        margin-left: 36%;
+    }
+ }
+ .spacing-s {
+     letter-spacing: 22px;
+ }
+/* FIN HOME */
+    
+
+//NAVBAR//
+
+.nav-bar{
+    background-color : var(--marine);
+}
+
+.nav-bar-white{
+    color : white;
+}
+
+.nav-link:hover{
+    color : var(--framboise);
+}
+
+.black-logo a{
+    color : black;
+    text-decoration: none;
+}
+
+.title-navbar{
+    font-family: 'Oswald';
+}
+
+.title-footer{
+    font-family: 'Oswald';
+}
+
+.logo:hover{
+    color:white;
+}
+
+.badge-nav{
+    font-family: 'Roboto', sans-serif;
+}
+
+//END NAVBAR//
+
+// ONE PRODUCT //
+.container-one-product{
+    padding-top:2rem;
+}
+
+.description-title{
+    font-family: 'Roboto';
+ 
+}
+
+.advice{
+    background-color: var(--marine);
+    color: white;
+    padding: 3% 3% 3% 3%;
+    margin-bottom: 2rem;
+
+}
+
+.title-advice{
+    font-family: 'Raleway', sans-serif;
+    font-size: 30px;
+}
+
+.img-shadow{
+    box-shadow: 0px 0px 3px 4px rgb(172, 171, 171);
+}
+
+.text-advice{
+    font-family: 'Roboto', sans-serif;
+}
+
+.title-similar-products{
+    font-family: 'Raleway', sans-serif;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.title-promo{
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+}
+
+.similar-products{
+    background-color: var(--marine);
+    color: white;
+}
+
+.hashtags{
+    color: var(--framboise);
+    text-transform: uppercase;
+}
+
+#suggestion-link{
+    color: white;
+    text-decoration: none;
+}
+
+.framboise{
+    padding-left:5%;
+    color: var(--framboise);
+}
+
+.price{
+    font-size:30px;
+}
+
+.card-one{
+    padding-top: 5%;
+}
+
+// END ONE PRODUCT //
+
+
+//ALL PRODUCTS debut//
+.color-letter{
+    font-weight: 400;
+    font-family: "Oswald", sans-serif;
+}
+.color-letter::first-letter{
+    color: var(--framboise);
+}
+.card-filter {
+    border: 1px solid whitesmoke;
+    -webkit-box-shadow: 2px 10px 13px -7px #000000, 3px 3px 3px -1px rgba(0,0,0,0); 
+    box-shadow: 2px 10px 13px -7px #000000, 3px 3px 3px -1px rgba(0,0,0,0);
+}
+
+.text-subnav {
+    color: var(--marine);
+    font-size: 30px;
+    font-weight: 100;
+}
+.filter {
+    display: block;
+    position:sticky;
+    top:20px;
+   }
+
+.border-pres {
+    border-radius: 15px;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    color: var(--framboise);
+    background-color: white;
+    margin-top: -40px;
+}
+p {
+    font-size: 18px;
+}
+
+#profil {
+    object-fit: cover;
+    width: 100%;
+    height: 25%;
+}
+
+.heart{
+    font-size:30px;
+}
+
+.link-for-show {
+    color: black;
+    text-decoration: none;
+}
+
+.link-for-show:hover {
+    color: var(--framboise);
+    text-decoration: none;
+}
+
+.link-for-show-img:hover {
+    filter: brightness(80%);
+-webkit-filter: brightness(80%);
+text-decoration: none;
+}
+.text-framboise {
+    color: var(--framboise);
+}
+.border-style-products {
+    margin-top: -40px;
+    border-radius: 50px 50px;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+.like-icon:hover {
+    color: var(--framboise);
+}
+
+.like-icon {
+    background-color: white;
+    padding: 10px;
+    font-size: 30px;
+    border-radius: 50%;
+}
+
+.btn-framboise-filtre {
+    background-color: var(--framboise);
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 15px 15px;
+    border: 1px solid var(--framboise);
+}
+.btn-framboise-filtre:hover {
+    border: 2px solid var(--framboise);
+    text-decoration: none;
+    color:black;
+    background-color: transparent;
+}
+.filter-design {
+    letter-spacing: 7px;
+}
+
+.page-item.active .page-link{
+    background-color: var(--framboise)!important;
+    border:1px solid var(--framboise)!important;
+}
+.page-item .page-link:hover {
+    color: black!important;
+}
+
+//ALL PRODUCTS FIN//
+
+
+//PAGE 404//
+
+.link-404 {
+    color: var(--framboise);
+    text-decoration: none;
+}
+
+.link-404:hover {
+    color: var(--marine);
+    text-decoration: none;
+}
+
+.ellipse-404 {
+    background:var(--framboise);
+    border-radius:100%;
+    width: 350px;
+    height: 350px;
+}
+
+.error-404-height {
+    min-height: 350px;
+}
+
+.text-error {
+    position: absolute;
+    z-index: 1;
+}
+
+@media screen and (min-width: 320px) and (max-width: 435px) {
+    .ellipse-404 {  
+       display:none;
+    }
+
+    .error-404-height {
+        min-height: none;
+    }
+}
+//PAGE 404 fin//
+
+
+// SURVIVE GUIDE //
+
+.bg-indispensable {
+    background-color: whitesmoke;
+}
+// START CART //
+
+.container-cart{
+    margin-bottom:5%;
+}
+
+.btn-fra {
+    background-color: var(--framboise);
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 10px 10px;
+    border: 1px solid var(--framboise);
+}
+
+.btn-fra a{
+    color: white;
+    
+}
+.btn-fra:hover{
+    color:white;
+}
+
+.cart-link a{
+    color:black;
+    text-decoration: none;
+}
+
+.total-title{
+    font-weight: bold;
+    font-size: 20px;
+    font-family: 'Oswald', sans-serif;
+}
+
+.total-price{
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.text-psst{
+    margin-bottom: 5%;
+    margin-top: 3%;
+}
+
+.btn-checkout{
+    margin-bottom: 3%;
+    margin-top: -2%;
+}
+
+.container-success{
+    margin-bottom: 3%;
+}
+// END CART //
